@@ -1,0 +1,20 @@
+#Get user input
+
+user_num = int(input())
+x = int(input())
+
+#Set value r1
+
+r1 = user_num // x
+
+#Take the value of r1 and divide it by x again
+
+r2 = r1 // x
+
+#Take the value of r2 and divide it by x again
+
+r3 = r2 // x
+
+#Print the values of all 3
+
+print(r1, r2, r3)
