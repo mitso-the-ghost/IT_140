@@ -1,0 +1,13 @@
+#Get user input
+
+user_input = input()
+
+#Split the user input
+
+word_list = user_input.split()
+
+#Create a for statement, count frequency of words, print
+
+for word in word_list:
+    freq = word_list.count(word)
+    print(word, freq)
