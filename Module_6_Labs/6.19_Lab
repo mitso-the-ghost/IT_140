@@ -1,0 +1,22 @@
+#Creating an empty dictionary
+
+word_pairs = {}
+
+#Get user input and split
+
+user_input = input().split()
+sentence = input()
+
+#Set the index
+
+step = 2
+for index in range( 0, len(user_input), step):
+    key = user_input[index]
+    value = user_input[index + 1]
+    word_pairs[key] = value
+
+ #Replace original words with the replacement words   
+    
+for original, new in word_pairs.items():
+    sentence = sentence.replace(original, new)
+print(sentence)
