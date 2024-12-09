@@ -1,0 +1,51 @@
+#Set the values
+
+total_change = int(input())
+dollar = 100
+quarter = 25
+dime = 10
+nickel = 5
+penny = 1
+
+#Create an if for if theres no change back
+
+if total_change == 0:
+    print ('No change')
+
+#Calculate how much change is given back
+#Create 2 if statements to determine whether the answer is singular or plural
+
+dollars = total_change // dollar
+total_change = total_change - (dollars * dollar)
+if dollars > 1:
+    print(dollars, 'Dollars')
+if (dollars == 1):
+    print(dollars, 'Dollar')
+        
+quarters = total_change // quarter
+total_change = total_change - (quarters * quarter)
+if quarters > 1:
+    print(quarters, 'Quarters')
+if quarters == 1:
+    print(quarters, 'Quarter')
+        
+dimes = total_change // dime
+total_change = total_change - (dimes * dime)
+if dimes > 1:
+    print(dimes, 'Dimes')
+if dimes == 1:
+    print(dimes, 'Dime')
+        
+nickels = total_change // nickel
+total_change = total_change - (nickels * nickel)
+if nickels > 1:
+    print(nickels, 'Nickels')
+if nickels == 1:
+    print(nickels, 'Nickel')
+        
+pennies = total_change // penny
+total_change = total_change - (pennies * penny)
+if pennies > 1:
+    print(pennies, 'Pennies')
+if pennies == 1:
+    print(pennies, 'Penny')
