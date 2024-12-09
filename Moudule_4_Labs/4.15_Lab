@@ -1,0 +1,13 @@
+#Set values, password is empty for now, and add the appendage
+
+word = input()
+password = ''
+string_append = 'q*s'
+
+#Specify what letters are being replaced with which characters
+
+password = (word.replace('i','!').replace('a', '@').replace('m', 'M').replace('B', '8').replace('o', '.'))
+
+#Print the password and the appendage
+
+print(password + string_append)
