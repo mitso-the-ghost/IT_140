@@ -1,0 +1,9 @@
+userNum = int(input())
+
+#Change from addition to multiplication
+
+userNumSquared = userNum * userNum   
+
+#Remove (, end=' ')
+   
+print(userNumSquared)
