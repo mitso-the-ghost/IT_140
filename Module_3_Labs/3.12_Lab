@@ -1,0 +1,29 @@
+#Set values
+
+month = input()
+day = int(input())
+
+#Create a list of the valid months, and how many days are in each month
+
+valid_months = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
+days_in_months = {'January': 31, 'February': 29, 'March': 31, 'April': 30, 'May': 31, 'June': 30, 'July': 31, 'August': 31, 'September': 30, 'October': 31, 'November': 31, 'December': 31}
+
+#Define the function, creating the seasons. Use if and else if statements
+    
+def get_season(input_month, input_day):
+    if (month == 'March' and day >= 20) or (month == 'April') or (month == 'June' and day <= 20):
+        return 'Spring'
+    elif(month == 'June' and day >=21) or (month == 'July') or (month == 'August') or (month == 'September' and day <=21):
+        return 'Summer'
+    elif(month == 'September' >= 22) or (month == 'October') or (month == 'November') or (month == 'December' and day <=20):
+        return 'Autumn'
+    elif(month == 'December' and day >= 21) or (month == 'January') or (month == 'February') or (month == 'March' and day <= 19):
+        return 'Winter'
+ 
+#Identify whether the user input was valid or invalid
+
+if month in valid_months and 1 <= day <= days_in_months.get(month, -1):
+     season = get_season(month,day)
+     print(season)
+else:
+    print('Invalid')
