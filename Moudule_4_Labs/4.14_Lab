@@ -1,0 +1,17 @@
+#Get user input
+
+user_text = input()
+
+#Set input to 0
+
+count = 0
+
+#Setting which characters you want counted
+
+for ch in user_text:
+    if ch != ' ' and ch != '.' and ch != ',':
+        count += 1
+
+#Print out the count
+        
+print(count)
