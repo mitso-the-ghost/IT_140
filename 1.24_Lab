@@ -1,0 +1,18 @@
+#Set starting calories to 0
+
+calories = 0
+
+#Set values and get user input
+
+user_age = int(input())
+user_weight = float(input())
+user_heart_rate = int(input())
+time_min = int(input())
+
+#Use given equation to get the value of calories
+
+calories = ((user_age * 0.2757) + (user_weight * 0.03295) + (user_heart_rate * 1.0781) - 75.4991) * time_min / 8.368
+
+#Print to format. Use '.2f' because you want your answer to have 2 spaces after the decimal space
+
+print('Calories: {:.2f} calories' .format(calories))
