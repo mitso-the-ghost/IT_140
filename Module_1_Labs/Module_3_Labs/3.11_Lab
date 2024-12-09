@@ -1,0 +1,9 @@
+#Get user inputs
+
+num_1 = int(input())
+num_2 = int(input())
+num_3 = int(input())
+
+#Print out the minimum of the 3 inputs
+
+print(min(num_1, num_2, num_3))
