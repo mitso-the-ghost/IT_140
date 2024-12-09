@@ -1,0 +1,19 @@
+#Get user input and split it
+
+user_input = input()
+
+x = user_input.split()
+
+#Set values, and append
+
+nums = []
+for x in x:
+    nums.append(int(x))
+
+#Find the average    
+    
+avg = sum(nums) / len(nums)
+
+#Print the average and max number
+
+print(int(avg), max(nums))
