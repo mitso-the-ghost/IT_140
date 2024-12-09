@@ -1,0 +1,19 @@
+#Get the user input
+
+full_name = str(input())
+
+#Split the input
+
+name = full_name.split()
+
+#Create an if statement set to the length of the name is 3
+#[] tell you which character in the name they are accessing, the index
+#[2] - will give you the last name, [0][0] - will give you the first initial of the first name, and [1][0] - will give you the first initial of the middle name
+
+if len(name) == 3:
+    print(name[2] + ', ' + name[0][0] + '.' + name[1][0] + '.')
+
+    #Create an else if statement for if the length of the name is only 2
+    
+elif len(name) == 2:
+    print(name[1] + ', ' + name[0][0] + '.')
