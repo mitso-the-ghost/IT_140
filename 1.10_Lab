@@ -1,0 +1,5 @@
+print('Enter x: ')
+x = int(input())
+
+#Remove print(x) statement
+print('x doubled is:', (2 * x))
