@@ -1,0 +1,19 @@
+#Get user input
+
+user_input = input()
+
+#Set the index to 0, identifies the character
+
+character = user_input[0]
+
+#Looks at the letters after the space. (The phrase)
+
+phrase = user_input[2:]
+
+#Counts how many times the chatacter appears in the phrase
+
+counting_char = phrase.count(character)
+
+#Print out the result
+
+print(counting_char)
