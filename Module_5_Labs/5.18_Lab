@@ -1,0 +1,11 @@
+#Define the function to swap the two values
+
+def swap_values(user_val1, user_val2):
+    return user_val2, user_val1
+
+#Create an if statement to print out the swapped values
+
+if __name__ == '__main__': 
+    val1 = int(input())
+    val2 = int(input())
+    print(val2, val1)
