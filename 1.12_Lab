@@ -1,0 +1,28 @@
+#Get user input and validate
+
+user_num = int(input('Enter integer:\n'))
+print('You entered:', + user_num)
+
+#Square the user input and validate
+
+user_numsq = user_num * user_num
+print(user_num, 'squared is', + user_numsq)
+
+#Cube the user input and validate
+
+user_numcb = user_num * user_num * user_num
+print('And', + user_num ,'cubed is', + user_numcb,'!!')
+
+#Get second user input
+
+user_num2 = int(input('Enter another integer:\n'))
+
+#Add the first user input to the second user input, and validate
+
+add_sum = user_num + user_num2
+print(user_num, '+', user_num2 , 'is', add_sum)
+
+#Multiply the first user input to the second user input, and validate
+
+mult_sum = user_num * user_num2
+print(user_num, '*', user_num2, 'is', mult_sum)
