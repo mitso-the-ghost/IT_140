@@ -1,0 +1,13 @@
+#Get user input
+
+user_input = input()
+
+#Split the user input, remove negative numbers, and then sort
+
+int_list = [int(x) for x in user_input.split (' ') if int(x) >= 0]
+int_list.sort()
+
+#Print numbers from least to greatest
+
+for x in int_list:
+    print(x, end=' ')
