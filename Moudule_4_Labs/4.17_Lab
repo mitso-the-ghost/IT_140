@@ -1,0 +1,15 @@
+#Get user input, and split
+#Break the split apart and set index values
+
+user_input = input().split()
+word = user_input [0]
+number = user_input [1]
+
+#Begin a while loop
+#Have it formatted to the index values so it prints correctly
+
+while (word != 'quit'):
+    print("Eating {0} {1} a day keeps the doctor away.".format(number, word))
+    user_input = input().split()
+    word = user_input[0]
+    number = user_input[1]
